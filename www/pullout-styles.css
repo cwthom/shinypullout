@@ -1,0 +1,58 @@
+
+.pullout-panel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.pp-right {
+  right: 0;
+}
+.pp-left {
+  left: 0;
+}
+
+
+.pp-handle {
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  pointer-events: auto;
+  writing-mode: vertical-lr;
+  text-align: center;
+  color: #000;
+  z-index: 1002;
+}
+.pp-handle-right {
+  left: 0;
+  border-width: 1px 0 1px 1px;
+  border-radius: 10px 0 0 10px;
+}
+.pp-handle-left {
+  right: 0;
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.pp-contents {
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.pp-contents-right {
+  right: 0;
+  border-left: 1px solid;
+}
+.pp-contents-left {
+  left: 0;
+  border-right: 1px solid;
+}
+
